@@ -2,6 +2,7 @@ package com.example.utils;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -33,7 +34,11 @@ class StringUtilsTest {
 
     @Test
     void join_shouldIgnoreNullValues() {
-        String result = StringUtils.join(List.of("Java", null, "Spring"), ", ");
+        List<String> values = new ArrayList<>();
+        values.add("Java");
+        values.add(null);
+        values.add("Spring");
+        String result = StringUtils.join(values, ", ");
         assertEquals("Java, Spring", result);
     }
 
