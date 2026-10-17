@@ -1,6 +1,6 @@
-# mini-java-utils
+# utils
 
-A tiny Java utility library designed for experimentation, learning, and creating meaningful pull requests.
+A tiny Java utility library.
 
 Java version: 21
 
